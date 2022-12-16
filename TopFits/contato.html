@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopFits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                <!--começo header-->
+                <header>
+                    <nav>
+                        <a class="logo a" href="index.html"><span>TopFits</span></a>
+                        <div class="mobile-menu">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                        <ul class="nav-list">
+                            <li><a class="a" href="index.html">Home</a></li>
+                            <li><a class="a"  href="ondeestamos.html">Onde estamos</a></li>
+                            <li><a class="a" href="planos.html">Planos</a></li>
+                            <li><a class="a" href="profissionais.html">Profissionais</a></li>
+                            <li><a class="a" href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <!--fim header-->
+
+                    <!---------COMEÇO DO FORMULÁRIO--------->
+
+        <section class="formulario-bg">
+            <div id="fade" class="hide">
+                <div id="loader" class="spinner-border text-info hide" role="status">
+                    <span class="visually-hidden">Carregando...</span>
+                </div>
+                <div id="message" class="hide">
+                    <div class="alert alert-light" role="alert">
+                        <h4>Mensagem:</h4>
+                        <p></p>
+                        <button id="close-message" type="button" class="btn btn-secondary">Fechar</button>
+                    </div>
+                </div>   
+                </div>
+            <div class="box_form">
+        <form id="register-form">
+            <fieldset>
+                <legend class="title"><b>Formulário para contato!</b></legend>
+                <br>
+    
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required data-min-length="3" data-required data-only-letters>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div><br><br>
+    
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" data-required required data-email-validate data-min-length="3">
+                    <label for="email" class="labelInput">E-mail</label>
+                </div><br><br>
+    
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required data-required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div><br><br>
+    
+                <p>Sexo</p>
+                <input type="radio" name="genero" id="feminino" value="feminino" required>
+                <label for="feminino">Feminino</label><br>
+    
+                <input type="radio" name="genero" id="masculino" value="masculino" required>
+                <label for="masculino">Masculino</label><br><br>
+                
+                <div class="inputBox">
+                    <input type="text" name="cep" id="cep" class="inputUser" required data-required>
+                    <label for="cep" class="labelInput">CEP</label>
+                </div><br><br>
+    
+                <div class="inputBox">
+                    <input type="text" name="bairro" id="rua" class="inputUser" required data-required >
+                    <label for="bairro" class="labelInput">Rua</label>
+                </div><br><br>
+    
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="numero" class="inputUser" required data-required >
+                    <label for="endereco" class="labelInput">Número</label>
+                </div><br><br>
+    
+                <div class="inputBox">
+                    <input type="text" name="numero" id="complemento" class="inputUser" required data-required >
+                    <label for="numero" class="labelInput">Complemento</label>
+                </div><br><br>
+    
+                <div class="inputBox">
+                    <input type="text" name="complemento" id="bairro" class="inputUser" required data-required >
+                    <label for="complemento" class="labelInput">Bairro</label>
+                </div><br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="complemento" id="cidade" class="inputUser" required data-required >
+                    <label for="complemento" class="labelInput">Cidade</label>
+                </div><br><br>
+
+                <div class="inputBox">
+                    <select name="region" id="região" class="inputUser" disabled required data-input>
+                  <option selected>Estado</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+    
+                <div class="full-box">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement" id="agreement-label">Eu li e aceito <a href="#">os termos de uso!</a></label>
+                </div><br>
+    
+                <input type="submit" id="submit" value="Enviar" onclick="apagaform()">
+                <div id=""></div>
+            </fieldset>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    </section>
+    <!--fim do formulário-->
+
+                        <!--começo footer-->
+                        <footer class="rodape">
+                            <div class="boxs">
+                                <h2>Início</h2>
+                        
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="contato.html">Contato</a></li>
+                                    <li><a href="ondeestamos.html">Onde estamos</a></li>
+                                    <li><a href="planos.html">Planos</a></li>
+                                    <li><a href="profissionais.html">Profissionais</a></li>
+                                </ul>
+                            </div>
+                            <div class="boxs">
+                                <h2>Informações</h2>
+                        
+                                <ul>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                    <li><a href="#">Email</a></li>
+                                </ul>
+                            </div>
+                            <div class="boxs">
+                                <h2>Suporte</h2>
+                        
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Telefone</a></li>
+                                    <li><a href="#">Chat</a></li>
+                                </ul>
+                            </div>
+                        </footer>
+                        <!--fim footer-->
+<script src="validation.js"></script>
+</body>
+</html>

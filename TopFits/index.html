@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopFits</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <!--começo header-->
+    <header>
+        <nav>
+            <a class="logo a" href="index.html"><span>TopFits</span></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a class="a" href="index.html">Home</a></li>
+                <li><a class="a"  href="ondeestamos.html">Onde estamos</a></li>
+                <li><a class="a" href="planos.html">Planos</a></li>
+                <li><a class="a" href="profissionais.html">Profissionais</a></li>
+                <li><a class="a" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+        <img src="banner academia.webp" alt="" class="img">
+        <h4>Bem-vindo a Top-Fits</h4>
+        <h5>Aqui sua vida fica melhor!</h5>
+        <h1><span>2023</span></h1> <h2>Já tá aí! Bota essa preguiça pra correr!</h2>
+        <a class="button" href="planos.html"><span>Conheça agora nossos planos!</span></a>
+        
+    </div>
+    </header>
+    <!--fim header-->
+
+    <section class="servicos">
+        <h1>Nossos Serviços</h1>
+        <div class="containerservico">
+            <div class="box">
+                <img src="treinoluta.webp" alt="Luta">
+                
+                <div class="info">
+                    <h3>Artes marciais</h3>
+                    <p>As diversas lutas trazem benefícios comuns e trabalham com todas as valências físicas, como resistência, velocidade de reação, deslocamento e de movimentação dos membros, flexibilidade, resistência muscular, coordenação, agilidade e ritmo.</p>
+    
+                </div>    
+            </div>
+    
+            <div class="box">
+                <img src="treinodanca.jpg" alt="zumba">
+                
+                <div class="info">
+                    <h3>Dança</h3>
+                    <p>Os movimentos realizados no decorrer de uma dança trazem uma série de efeitos benéficos para o cérebro. As mudanças de movimento que ocorrem na atividade impactam positivamente o hipocampo, que é a área do cérebro que armazena as memórias, e ainda ajudam a aprimorar o equilíbrio.</p>
+                </div>    
+            </div>
+    
+            <div class="box">
+                <img src="maquinas.jpg" alt="maquinas">
+                
+                <div class="info">
+                    <h3>Equipamentos</h3>
+                    <p>Nossa unidade conta com o que há de melhor no mercado fitness. Nos destacamos pela alta tecnologia presentes nos nossos equipamentos, além disso, prezamos muito pela conservação e funcionamento deles.</p>
+    
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!--começo cálculo imc-->
+
+    <section class="container">
+
+        <div id="calc-container">
+          <h2>Calcule agora seu IMC e veja o resultado</h2>
+          <form id="imc-form">
+            <div class="form-inputs">
+              <div class="form-control">
+                <label for="height">Altura:</label>
+                <input
+                  type="text"
+                  name="height"
+                  id="height"
+                  placeholder="Exemplo 1,75"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="weight">Peso:</label>
+                <input
+                  type="text"
+                  name="weight"
+                  id="weight"
+                  placeholder="Exemplo 70,5"
+                />
+              </div>
+            </div>
+            <div class="action-control">
+              <button id="calc-btn">Calcular</button>
+              <button id="clear-btn">Limpar</button>
+            </div>
+          </form>
+        </div>
+        <div id="result-container" class="hide">
+          <p id="imc-number">Seu IMC: <span></span></p>
+          <p id="imc-info">Situação atual: <span></span></p>
+          <h3>Confira as classificações</h3>
+          <div id="imc-table">
+            <div class="table-header">
+              <h4>IMC</h4>
+              <h4>Classificação</h4>
+              <h4>Obesidade</h4>
+            </div>
+          </div>
+          <button id="back-btn">Voltar</button>
+        </div>
+    </section>
+    <!--fim cálculo imc-->
+
+    <!--começo footer-->
+    <footer class="rodape">
+        <div class="boxs">
+            <h2>Início</h2>
+    
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="ondeestamos.html">Onde estamos</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+            </ul>
+        </div>
+        <div class="boxs">
+            <h2>Informações</h2>
+    
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </div>
+        <div class="boxs">
+            <h2>Suporte</h2>
+    
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Telefone</a></li>
+                <li><a href="#">Chat</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--fim footer-->
+    
+    <script src="script.js"></script>
+</body>
+</html>
